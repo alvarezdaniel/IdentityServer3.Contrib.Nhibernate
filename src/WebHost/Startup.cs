@@ -17,7 +17,7 @@ namespace WebHost
             Log.Logger = new LoggerConfiguration()
                .MinimumLevel.Debug()
                .WriteTo.Trace()
-               .WriteTo.RollingFile(@"C:\Users\RicardoSantos\Repos\Projects\IdentityServer3.Contrib.Nhibernate\src\WebHost\log\Log-{Date}.log")
+               .WriteTo.RollingFile(@"Log-{Date}.log")
                .CreateLogger();
 
             appBuilder.Map("/core", core =>
