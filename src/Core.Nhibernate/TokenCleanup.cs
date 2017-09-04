@@ -10,6 +10,7 @@ namespace IdentityServer3.Contrib.Nhibernate
     public class TokenCleanup
     {
         private readonly ISession _session;
+
         private static readonly ILog Logger = LogProvider.GetCurrentClassLogger();
 
         CancellationTokenSource _source;
